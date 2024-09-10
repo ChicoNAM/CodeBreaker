@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  <title>Codebreaker</title>
+</head>
+<body>
+  <div id="video-container">
+    <video autoplay loop muted width="1400">
+      <source src="./assets/matrix.mp4" type="video/mp4">
+    </video>
+  </div>
+    <div id="main-container">
+      <h1>Codebreaker Game</h1>
+      <div id="game-container">
+        <p class="input-text">Will you crack the code?</p>
+        <input type="text" id="playerGuess" maxlength="3" placeholder="Enter 3-Digit Number" />
+        <button onclick="makeGuess()">Enter</button>
+        <p id="guessDisplay"></p>
+        <p id="remainingTries"></p>
+      </div>
+    </div>
+  <script src="./codebreaker.js"></script>
+</body>
+</html>
